@@ -13,10 +13,6 @@ type R struct {
 }
 
 func Call(callback func(r *R)) *R {
-  typ := reflect.TypeOf(callback)
-  if typ.Kind() != reflect.Func {
-    panic("only function can be repeat.")
-  }
   return &R{
     Count:    0,
     callback: callback,
