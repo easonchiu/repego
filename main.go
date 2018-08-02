@@ -34,7 +34,7 @@ func (r *R) Do(sleep ... time.Duration) {
     r.callback(r)
 
     // if duration not 0, sleep
-    if sleepDuration > 0 {
+    if !r.close && sleepDuration > 0 {
       time.Sleep(sleepDuration)
     }
   }
