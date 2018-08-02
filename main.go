@@ -1,7 +1,6 @@
 package repego
 
 import (
-  "reflect"
   "time"
 )
 
