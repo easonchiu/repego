@@ -5,6 +5,12 @@
 ```
 repego.Call(func(r *R) bool {
   fmt.Println("repeat...")
+
+  if r.Count() > 10 {
+    return true
+    // or
+    // return r.Done()
+  }
   
   return false
 }).MaxCount(100).Do()
