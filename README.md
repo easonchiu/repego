@@ -11,7 +11,7 @@ repego.Call(func(r *R) bool {
 ```
 
 ```
-r := repego(func(r *R) bool {
+r := repego.Call(func(r *R) bool {
   fmt.Println("repeat...")
   
   return false
